@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.back-color{
+    background-color: $pink;
+}
+.fv-2{
+    img{
+        vertical-align: bottom;
+    }
+    .reserve-container{
+        position: relative;
+        .yureru-j {
+            animation: yureru-j 2s infinite;
+        }
+        @keyframes yureru-j {
+            0% {
+                transform: translate(0px, 2px);
+            }
+            5% {
+                transform: translate(0px, -2px);
+            }
+            10% {
+                transform: translate(0px, 2px);
+            }
+            15% {
+                transform: translate(0px, -2px);
+            }
+            20% {
+                transform: translate(0px, 2px);
+            }
+            25% {
+                transform: translate(0px, -2px);
+            }
+            30% {
+                transform: translate(0px, 0px);
+            }
+        }
+        
+        .reserve{
+            width: 80%;
+            position: absolute;
+            left:0;
+            right: 0;
+            margin: 0 auto;
+            top: -140px;
+
+            @include mediaXS{
+                top: -100px;
+
+            }
+            a{
+                padding: 30px;
+                background: $red;
+                display: block;
+                border-radius: 7em;
+                color: $white;
+                font-size: 1.625rem;
+                font-weight: 700;
+                text-shadow: 1px 2px 2px rgba($color: $black, $alpha: 0.18);
+                @include mediaXS{
+                    padding: 18px;
+                    font-size: 1.2rem; 
+                }
+            }
+        }
+    }
+}
+
+//全ての画像の隙間を無くす
+    img{
+        vertical-align: bottom; 
+    }
+
+.red-back{
+    background-color: $red;
+}
+.topic{
+    background-color: $red;
+    .lp2-h1{
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 700;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0px auto;
+        color: $white;
+        @include mediaXS{
+            font-size: 2rem;
+        }
+    }
+}
+.secret{
+    background-image: url(/assets/img/rose-back.png);
+    height: 263px;
+    .lp2-h2{
+        color: $red;
+        font-size: 2.5rem; 
+        text-align: center;
+        padding-top: 70px;
+        margin: 0 auto;
+        @include mediaPHONE{
+            width: 90%;
+            padding-top: 90px;
+            font-size: 1.8rem;
+        }
+        .big{
+            display: inline-block;
+            font-size: 3.75rem;
+            @include mediaPHONE{
+                font-size: 2.5rem;
+            }
+        }   
+    }   
+}
+
+.secret-contents{
+    color: $white;
+    @include mediaXS{
+        margin: 0 auto;
+        width: 90%;
+     }
+    .center{
+        text-align: center;
+        margin: 0px auto;
+        padding-top: 20px;
+        font-size: 1.5rem;
+        @include mediaXS{
+            font-size: 1.125rem;
+        }
+    }
+}
+    .populat-secret{
+        margin-top: 90px;
+        position: relative;
+        color: $white;
+        @include mediaXS{
+            margin: 50px  auto 0 auto;
+            width: 90%;
+         }
+        p{
+        font-size: 1.375rem;
+        }
+        .nautica{
+            position: absolute;
+            font-family: "nautica", sans-serif;
+            font-size: 4.375rem;
+            top: -17px;
+            left: 10%;
+            opacity: 0.4;
+        }
+    }
+    .secret-title{
+        color: $white;
+        text-align: center;
+        margin: 50px auto 30px auto;
+        font-size: 1.375rem;
+        @include mediaXS{
+            margin: 40px auto 10px auto;
+        }
+    }
+    .secret-list{
+        padding-bottom: 50px;
+         width:100%;
+         @include mediaXS{
+            margin: 0 auto;
+            width: 90%;
+            padding-bottom: 10px;
+         }
+        
+        img{
+           /*  object-fit: cover; */
+            width: 50%;
+            height: 270px;
+            z-index: 1;
+            @include mediaXS{
+                width: 100%;
+                padding: 0px;
+                object-fit: contain;
+            }
+        }
+        .text{
+            width: 80%;
+            background-image: url(/assets/img/dairiseki.png);
+            margin-top: 30%;
+            margin-left: -100px;
+            height: 359px;
+            @include mediaXS{
+                margin: 0 auto;
+                width: 100%;
+             }
+            .black16{
+                color: $black;
+                font-size: 1rem;
+                margin: 25% auto;
+                width: 80%;
+                @include mediaXS{
+                    margin-top: 10%;
+                 }
+            }
+        }
+       
+    }
+    .flex-reverse{
+        display: flex;
+        flex-direction: row-reverse;
+        .text{
+            margin-left: 0px;
+        }
+        img{
+            margin-left: -100px;
+        }
+    }
+
+    .sp-text{
+        width: 90%;
+        margin: 0 auto;
+        text-align: left;
+        color: $white;
+    }
+    .padding-bottom{
+        padding-bottom: 100px;;
+    }
+    .herb{
+        text-align: center;
+        background-color: $white;
+        @include mediaXS{
+            /* margin-top: 100px; */
+        }
+        .lp2-h2{
+            color: $red;
+            font-size: 2.5rem; 
+            text-align: center;
+            padding-top: 70px;
+            @include mediaXS{
+                padding-top: 90px;
+                font-size: 1.8rem;
+            }
+            .big{
+                display: inline-block;
+                font-size: 3.75rem;
+                @include mediaXS{
+                    font-size: 2.2rem;
+                }
+            }   
+        } 
+        .toki{
+            margin: 20px auto;
+        }
+        .herb-discription{
+            width: 90%;
+            margin: 0 auto;
+            text-align: left;
+            @include mediaXS{
+                margin-bottom: 40px;
+            }
+            h3{
+                color: $red;
+                margin-top: 60px;
+                margin-bottom: 20px;
+                font-size: 1.25rem;
+                @include mediaXS{
+                    margin: 10px auto 20px auto;
+                }
+            }
+            .red-important{
+                color: $red;
+                font-size: 1rem;
+                font-weight: 700;
+             }
+             .margin{
+                margin-bottom: 80px;
+             } 
+        }
+        img{
+            margin: 50px auto;
+            @include mediaXS{
+                width: 90%;
+            }
+        } 
+    }
+    .b-a{
+        margin: 0 auto;
+        .lp2-h2{
+            color: $white;
+            font-size: 2.5rem; 
+            text-align: center;
+            padding-top: 70px;
+            @include mediaXS{
+                padding-top: 90px;
+                font-size: 1.8rem;
+            }
+            .big{
+                display: inline-block;
+                font-size: 3.75rem;
+                @include mediaPHONE{
+                    font-size: 2.5rem;
+                }
+            }   
+        }
+        .b-a-wrap{
+            width: 70%;
+            color: $white;
+            margin: 80px auto;
+            @include mediaXS{
+                width: 90%;
+            }
+           video{
+            width: 100%;
+            margin-bottom: 20px;
+           } 
+        }
+    }
+    
+
+    .voice{
+        background-color: $white;
+        
+        .lp2-h2{
+            color: $red;
+            font-size: 2.5rem; 
+            text-align: center;
+            padding-top: 70px;
+            @include mediaXS{
+                padding-top: 90px;
+                font-size: 1.8rem;
+            }
+            .big{
+                display: inline-block;
+                font-size: 3.75rem;
+                @include mediaXS{
+                    font-size: 2.5rem;
+                }
+            }   
+        }
+
+        .flex-2{
+            display: flex;
+            @include mediaXS{
+                display: block;
+            }
+        }
+        
+        .voice-contents{
+            width: 90%;
+            margin: 0px auto;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            @include mediaXS{
+                margin: 0 auto;
+                padding-top: 50px;
+                padding-bottom: 30px;
+            }
+            .voice-text{
+                width: 50%;
+                padding-right: 3%;
+                @include mediaS{
+                    width: 100%;
+                   margin-bottom: 20px;
+                }
+                .red-18{
+                    color: $red;
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                    @include mediaXS{
+                        text-align: center;
+                    }
+                }
+            }
+            img{
+                width: 50%;
+                object-fit: contain;
+                @include mediaXS{
+                    width: 100%
+                }
+            }
+            
+        }
+        .flex-reverse-2{
+            display: flex;
+            flex-direction: row-reverse;
+            @include mediaXS{
+                display: block;
+                flex-direction: column-reverse;
+            }
+            .voice-text{
+                padding-left: 3%;
+                padding-right: 0;
+                @include mediaXS{
+                    width: 100%
+                }
+            }
+         
+            .voice-reverse {
+                margin-left: 0px;
+                img{
+                    @include mediaXS{
+                        width: 100%;
+                    }  
+                }
+            }
+        }
+
+    }
+
+    .quesution-wrapper {
+        margin: 0 auto;
+        padding-top: 30px;
+       /*  padding: 100px 20px; */
+            @include mediaS{
+                width: 100%;
+               /*  padding: 0; */
+            }
+    .toggle_contents{
+        padding-bottom: 100px;
+        .toggle_item{
+            width: 90%;
+            margin: 0 auto 20px auto;
+            font-size: 1.125rem;
+            font-weight: 700;
+            .georgia{
+                font-family: "georgiapro", sans-serif;
+                padding-right: 10px;
+                font-size: 2rem;
+                color: $red;
+                font-weight: 400;
+            }
+        }
+      
+      
+      .toggle_title {
+        position: relative;
+        padding: 25px 5% 25px 5%;
+        background-color: $white;
+        display: flex;
+        align-items: center;
+        cursor: pointer; 
+             @include mediaS{
+                padding: 10px 15% 10px 5%;
+                 font-size: 0.875rem; 
+                
+             }
+       
+        }
+      
+      
+    //   .toggle_title:hover {
+    //     opacity: 0.7;
+    //     transition: 0.5s;
+    //   }
+      
+      .toggle_ans {
+        margin: 0;
+        padding:  28px 10% 28px 5%;
+        display: none;
+        color: $white;
+        a{
+            color: black;
+        }
+             @include mediaS{
+                /* padding: 10px 15% 10px 33%; */
+                
+             }
+      }
+      
+      /*プラス*/
+      .plus {
+        position: absolute;
+        right: 10%;
+        top: 0;
+        height: 100%;
+        border-radius: 0px 10px 10px 0px;
+      }
+      
+      .plus:before,
+      .plus:after {
+        display: block;
+        content: "";
+        background-color: $black;
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        transition: 0.5s;
+      }
+      
+      .plus:before {
+        width: 1px;
+        height: 15px;
+      }
+      
+      /*アコーディオンが開いたらプラスをマイナスにする*/
+      .toggle_title.selected .plus:before {
+        transform: translate(50%, 50%) rotate(90deg);
+      }
+    //   .toggle_title.selected .toggle_item{
+    //     margin-bottom: 0px;
+    //   }
+    }
+    h2{
+        text-align: center;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        font-size: 2rem;
+          @include mediaS{
+            padding-bottom: 40px;
+          }
+    }   
+    }
+
+    .flow{
+        text-align: center;
+        background-color: $white;
+        .lp2-h2{
+            color: $red;
+            font-size: 2.5rem; 
+            text-align: center;
+            padding-top: 70px;
+            @include mediaPHONE{
+                padding-top: 90px;
+                font-size: 2rem;
+            }
+        }
+        .red{
+            color: $red;
+            padding-top: 20px;
+        }
+        
+        .flow-wrapper{
+            text-align: left;
+            margin: 0 auto;
+            padding-top: 80px;
+            padding-bottom: 30px;
+            .flex-3{
+                margin: 0px auto 50px auto;
+                width: 90%;
+                display: flex;
+
+                @include mediaXS{
+                    display: block;
+                    width: 80%;
+                    margin-bottom: 80px;
+                }
+                img{
+                    width: 30%;
+                    @include mediaXS{
+                        width: 100%;
+                        object-fit: cover;
+                        margin: 0 auto;
+                    }
+                }
+                
+                .flow-discription{
+                    text-align: left;
+                    width: 100%;
+                    padding-left: 3%;
+                    h2{
+                        color: $red;
+                        font-size: 1.125rem;
+                        margin-top: 10px;
+                    }
+                    @include mediaXS{
+                        width: 90%;
+                        padding-left: 0px;
+                    }
+                }
+            }
+         }
+    }
+    footer{
+        background-color: $red;
+    }
+    
+
+   
+
+
